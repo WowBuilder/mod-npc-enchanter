@@ -139,6 +139,9 @@ const translations = {
 
     // === 戒指常规附魔及核心属性（新增） ===
     '40 Attack Power': '40 攻击强度',
+    '23 Spell Power': '23 法术强度',
+    '30 Stamina': '30 耐力',
+
 
     // === 上一批的附魔菜单（保留兼容） ===
     'Enchant Main Weapon': '附魔主手武器',

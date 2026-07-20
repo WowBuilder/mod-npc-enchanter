@@ -530,8 +530,8 @@ public:
 
         case 12: //Enchant rings
             AddGossipItemFor(player, 1, "40 攻击强度", GOSSIP_SENDER_MAIN, 202);
-            AddGossipItemFor(player, 1, "23 Spell Power", GOSSIP_SENDER_MAIN, 203);
-            AddGossipItemFor(player, 1, "30 Stamina", GOSSIP_SENDER_MAIN, 204);
+            AddGossipItemFor(player, 1, "23 法术强度", GOSSIP_SENDER_MAIN, 203);
+            AddGossipItemFor(player, 1, "30 耐力", GOSSIP_SENDER_MAIN, 204);
             AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100013, creature->GetGUID());
             return true;
