@@ -35,3 +35,11 @@ INSERT INTO `creature_equip_template` VALUES (@Entry, 1, 11343, 0, 0, 18019); --
 -- NPC TEXT
 DELETE FROM `npc_text` WHERE `ID`=@Entry;
 INSERT INTO `npc_text` (`ID`, `text0_0`) VALUES (@Entry, 'Good day $N. Beauregard Boneglitter at your service. I offer a vast array of gear enchantments for the aspiring adventurer.');
+
+-- 名称汉化
+DELETE FROM `creature_template_locale` WHERE `ID` = @Entry AND `locale` = 'zhCN';
+INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) VALUES (@Entry, 'zhCN', '骨闪', '附魔大师', 0);
+
+-- 对话汉化
+DELETE FROM `npc_text_locale` WHERE `ID` = @Entry AND `Locale` = 'zhCN';
+INSERT INTO `npc_text_locale` (`ID`, `Locale`, `Text0_0`) VALUES (@Entry, 'zhCN', '你好，$N。 我是骨闪，随时为您服务。我为有抱负的冒险家提供一系列琳琅满目的装备附魔。');
