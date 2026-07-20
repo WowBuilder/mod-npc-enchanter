@@ -272,23 +272,23 @@ public:
         if (!EnchanterEnableModule)
             return false;
 
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[Enchant Main Weapon]", GOSSIP_SENDER_MAIN, 1);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[附魔主手武器]", GOSSIP_SENDER_MAIN, 1);
         if (player->HasSpell(674))
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[Enchant Offhand Weapon]", GOSSIP_SENDER_MAIN, 13);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[附魔副手武器]", GOSSIP_SENDER_MAIN, 13);
 
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_axe_113:24:24:-18|t[Enchant 2H Weapon]", GOSSIP_SENDER_MAIN, 2);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_shield_71:24:24:-18|t[Enchant Shield]", GOSSIP_SENDER_MAIN, 3);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_helmet_29:24:24:-18|t[Enchant Head]", GOSSIP_SENDER_MAIN, 4);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_shoulder_23:24:24:-18|t[Enchant Shoulders]", GOSSIP_SENDER_MAIN, 5);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_misc_cape_18:24:24:-18|t[Enchant Cloak]", GOSSIP_SENDER_MAIN, 6);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_chest_cloth_04:24:24:-18|t[Enchant Chest]", GOSSIP_SENDER_MAIN, 7);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_bracer_14:24:24:-18|t[Enchant Bracers]", GOSSIP_SENDER_MAIN, 8);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_gauntlets_06:24:24:-18|t[Enchant Gloves]", GOSSIP_SENDER_MAIN, 9);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_pants_11:24:24:-18|t[Enchant Legs]", GOSSIP_SENDER_MAIN, 10);
-        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_boots_05:24:24:-18|t[Enchant Boots]", GOSSIP_SENDER_MAIN, 11);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_axe_113:24:24:-18|t[附魔双手武器]", GOSSIP_SENDER_MAIN, 2);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_shield_71:24:24:-18|t[附魔盾牌]", GOSSIP_SENDER_MAIN, 3);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_helmet_29:24:24:-18|t[附魔头部]", GOSSIP_SENDER_MAIN, 4);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_shoulder_23:24:24:-18|t[附魔肩部]", GOSSIP_SENDER_MAIN, 5);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_misc_cape_18:24:24:-18|t[附魔披风]", GOSSIP_SENDER_MAIN, 6);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_chest_cloth_04:24:24:-18|t[附魔胸甲]", GOSSIP_SENDER_MAIN, 7);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_bracer_14:24:24:-18|t[附魔护腕]", GOSSIP_SENDER_MAIN, 8);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_gauntlets_06:24:24:-18|t[附魔手套]", GOSSIP_SENDER_MAIN, 9);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_pants_11:24:24:-18|t[附魔腿部]", GOSSIP_SENDER_MAIN, 10);
+        AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_boots_05:24:24:-18|t[附魔靴子]", GOSSIP_SENDER_MAIN, 11);
 
         if (player->HasSkill(SKILL_ENCHANTING) && player->GetSkillValue(SKILL_ENCHANTING) == 450)
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_jewelry_ring_85:24:24:-18|t[Enchant Rings]", GOSSIP_SENDER_MAIN, 12);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_jewelry_ring_85:24:24:-18|t[附魔戒指]", GOSSIP_SENDER_MAIN, 12);
 
         player->PlayerTalkClass->SendGossipMenu(601015, creature->GetGUID());
         return true;
@@ -308,23 +308,23 @@ public:
         case 1: // Enchant Main Hand Weapon
             if (player->HasSkill(SKILL_ENCHANTING) && player->GetSkillValue(SKILL_ENCHANTING) == 450)
             {
-                AddGossipItemFor(player, 1, "Blade Ward", GOSSIP_SENDER_MAIN, 102);
-                AddGossipItemFor(player, 1, "Blood Draining", GOSSIP_SENDER_MAIN, 103);
+                AddGossipItemFor(player, 1, "刃卫", GOSSIP_SENDER_MAIN, 102);
+                AddGossipItemFor(player, 1, "血涌", GOSSIP_SENDER_MAIN, 103);
             }
-            AddGossipItemFor(player, 1, "26 Agility", GOSSIP_SENDER_MAIN, 100);
-            AddGossipItemFor(player, 1, "45 Spirit", GOSSIP_SENDER_MAIN, 101);
-            AddGossipItemFor(player, 1, "Berserking", GOSSIP_SENDER_MAIN, 104);
-            AddGossipItemFor(player, 1, "25 Hit Rating + 25 Critical", GOSSIP_SENDER_MAIN, 105);
-            AddGossipItemFor(player, 1, "Black Magic", GOSSIP_SENDER_MAIN, 106);
-            AddGossipItemFor(player, 1, "Battlemaster", GOSSIP_SENDER_MAIN, 107);
-            AddGossipItemFor(player, 1, "Icebreaker", GOSSIP_SENDER_MAIN, 108);
-            AddGossipItemFor(player, 1, "Lifeward", GOSSIP_SENDER_MAIN, 109);
-            AddGossipItemFor(player, 1, "50 Stamina", GOSSIP_SENDER_MAIN, 110);
-            AddGossipItemFor(player, 1, "65 Attack Power", GOSSIP_SENDER_MAIN, 111);
-            AddGossipItemFor(player, 1, "63 Spell Power", GOSSIP_SENDER_MAIN, 112);
-            AddGossipItemFor(player, 1, "Mongoose", GOSSIP_SENDER_MAIN, 113);
-            AddGossipItemFor(player, 1, "Executioner", GOSSIP_SENDER_MAIN, 114);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "26 敏捷", GOSSIP_SENDER_MAIN, 100);
+            AddGossipItemFor(player, 1, "45 精神", GOSSIP_SENDER_MAIN, 101);
+            AddGossipItemFor(player, 1, "狂暴", GOSSIP_SENDER_MAIN, 104);
+            AddGossipItemFor(player, 1, "25 命中等级 + 25 暴击", GOSSIP_SENDER_MAIN, 105);
+            AddGossipItemFor(player, 1, "黑魔法", GOSSIP_SENDER_MAIN, 106);
+            AddGossipItemFor(player, 1, "战斗大师", GOSSIP_SENDER_MAIN, 107);
+            AddGossipItemFor(player, 1, "破冰", GOSSIP_SENDER_MAIN, 108);
+            AddGossipItemFor(player, 1, "生命守护", GOSSIP_SENDER_MAIN, 109);
+            AddGossipItemFor(player, 1, "50 耐力", GOSSIP_SENDER_MAIN, 110);
+            AddGossipItemFor(player, 1, "65 攻击强度", GOSSIP_SENDER_MAIN, 111);
+            AddGossipItemFor(player, 1, "63 法术强度", GOSSIP_SENDER_MAIN, 112);
+            AddGossipItemFor(player, 1, "猫鼬", GOSSIP_SENDER_MAIN, 113);
+            AddGossipItemFor(player, 1, "斩杀", GOSSIP_SENDER_MAIN, 114);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100002, creature->GetGUID());
             return true;
             break;
@@ -339,13 +339,13 @@ public:
             }
             if (item->GetTemplate()->InventoryType == INVTYPE_2HWEAPON)
             {
-                AddGossipItemFor(player, 1, "Berserking", GOSSIP_SENDER_MAIN, 104);
-                AddGossipItemFor(player, 1, "Mongoose", GOSSIP_SENDER_MAIN, 113);
-                AddGossipItemFor(player, 1, "Executioner", GOSSIP_SENDER_MAIN, 114);
-                AddGossipItemFor(player, 1, "81 Spell Power", GOSSIP_SENDER_MAIN, 115);
-                AddGossipItemFor(player, 1, "35 Agility", GOSSIP_SENDER_MAIN, 116);
-                AddGossipItemFor(player, 1, "110 Attack Power", GOSSIP_SENDER_MAIN, 117);
-                AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+                AddGossipItemFor(player, 1, "狂暴", GOSSIP_SENDER_MAIN, 104);
+                AddGossipItemFor(player, 1, "猫鼬", GOSSIP_SENDER_MAIN, 113);
+                AddGossipItemFor(player, 1, "斩杀", GOSSIP_SENDER_MAIN, 114);
+                AddGossipItemFor(player, 1, "81 法术强度", GOSSIP_SENDER_MAIN, 115);
+                AddGossipItemFor(player, 1, "35 敏捷", GOSSIP_SENDER_MAIN, 116);
+                AddGossipItemFor(player, 1, "110 攻击强度", GOSSIP_SENDER_MAIN, 117);
+                AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             }
             else
             {
@@ -366,13 +366,13 @@ public:
             }
             if (item->GetTemplate()->InventoryType == INVTYPE_SHIELD)
             {
-                AddGossipItemFor(player, 1, "20 Defense", GOSSIP_SENDER_MAIN, 118);
-                AddGossipItemFor(player, 1, "25 Intellect", GOSSIP_SENDER_MAIN, 119);
-                AddGossipItemFor(player, 1, "12 Resilience", GOSSIP_SENDER_MAIN, 120);
-                AddGossipItemFor(player, 1, "36 Block", GOSSIP_SENDER_MAIN, 121);
-                AddGossipItemFor(player, 1, "18 Stamina", GOSSIP_SENDER_MAIN, 122);
-                AddGossipItemFor(player, 1, "81 Block + 50% Less Disarm", GOSSIP_SENDER_MAIN, 123);
-                AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+                AddGossipItemFor(player, 1, "20 防御等级", GOSSIP_SENDER_MAIN, 118);
+                AddGossipItemFor(player, 1, "25 智力", GOSSIP_SENDER_MAIN, 119);
+                AddGossipItemFor(player, 1, "12 韧性等级", GOSSIP_SENDER_MAIN, 120);
+                AddGossipItemFor(player, 1, "36 格挡值", GOSSIP_SENDER_MAIN, 121);
+                AddGossipItemFor(player, 1, "18 耐力", GOSSIP_SENDER_MAIN, 122);
+                AddGossipItemFor(player, 1, "81 格挡值 + 50% 缴械时间缩短", GOSSIP_SENDER_MAIN, 123);
+                AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             }
             else
             {
@@ -385,19 +385,19 @@ public:
             break;
 
         case 4: // Enchant Head
-            AddGossipItemFor(player, 1, "30 Spell Power + 10 Mp5", GOSSIP_SENDER_MAIN, 124);
-            AddGossipItemFor(player, 1, "30 Spell Power + 20 Crit", GOSSIP_SENDER_MAIN, 125);
-            AddGossipItemFor(player, 1, "29 Spell Power + 20 Resilience", GOSSIP_SENDER_MAIN, 126);
-            AddGossipItemFor(player, 1, "30 Stamina + 25 Resilience", GOSSIP_SENDER_MAIN, 127);
-            AddGossipItemFor(player, 1, "37 Stamina + 20 Defense", GOSSIP_SENDER_MAIN, 128);
-            AddGossipItemFor(player, 1, "50 Attack Power + 20 Crit", GOSSIP_SENDER_MAIN, 129);
-            AddGossipItemFor(player, 1, "50 Attack Power + 20 Resilience", GOSSIP_SENDER_MAIN, 130);
-            AddGossipItemFor(player, 1, "Arcanum of Eclipsed Moon", GOSSIP_SENDER_MAIN, 131);
-            AddGossipItemFor(player, 1, "Arcanum of the Flame's Soul", GOSSIP_SENDER_MAIN, 132);
-            AddGossipItemFor(player, 1, "Arcanum of the Fleeing Shadow", GOSSIP_SENDER_MAIN, 133);
-            AddGossipItemFor(player, 1, "Arcanum of the Frosty Soul", GOSSIP_SENDER_MAIN, 134);
-            AddGossipItemFor(player, 1, "Arcanum of Toxic Warding", GOSSIP_SENDER_MAIN, 135);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "30 法术强度 + 每5秒恢复10点法力值", GOSSIP_SENDER_MAIN, 124);
+            AddGossipItemFor(player, 1, "30 法术强度 + 20 暴击等级", GOSSIP_SENDER_MAIN, 125);
+            AddGossipItemFor(player, 1, "29 法术强度 + 20 韧性等级", GOSSIP_SENDER_MAIN, 126);
+            AddGossipItemFor(player, 1, "30 耐力 + 25 韧性等级", GOSSIP_SENDER_MAIN, 127);
+            AddGossipItemFor(player, 1, "37 耐力 + 20 防御等级", GOSSIP_SENDER_MAIN, 128);
+            AddGossipItemFor(player, 1, "50 攻击强度 + 20 暴击等级", GOSSIP_SENDER_MAIN, 129);
+            AddGossipItemFor(player, 1, "50 攻击强度 + 20 韧性等级", GOSSIP_SENDER_MAIN, 130);
+            AddGossipItemFor(player, 1, "黯月秘药 (25奥抗/30耐力)", GOSSIP_SENDER_MAIN, 131);
+            AddGossipItemFor(player, 1, "烈焰灵魂秘药 (25火抗/30耐力)", GOSSIP_SENDER_MAIN, 132);
+            AddGossipItemFor(player, 1, "逃兵阴影秘药 (25暗抗/30耐力)", GOSSIP_SENDER_MAIN, 133);
+            AddGossipItemFor(player, 1, "冰霜灵魂秘药 (25冰抗/30耐力)", GOSSIP_SENDER_MAIN, 134);
+            AddGossipItemFor(player, 1, "剧毒防护秘药 (25自然抗/30耐力)", GOSSIP_SENDER_MAIN, 135);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100005, creature->GetGUID());
             return true;
             break;
@@ -405,19 +405,19 @@ public:
         case 5: // Enchant Shoulders
             if (player->HasSkill(SKILL_INSCRIPTION) && player->GetSkillValue(SKILL_INSCRIPTION) == 450)
             {
-                AddGossipItemFor(player, 1, "120 Attack Power + 15 Crit", GOSSIP_SENDER_MAIN, 136);
-                AddGossipItemFor(player, 1, "70 Spell Power + 8 Mp5", GOSSIP_SENDER_MAIN, 137);
-                AddGossipItemFor(player, 1, "60 Dodge + 15 Defense", GOSSIP_SENDER_MAIN, 138);
-                AddGossipItemFor(player, 1, "70 Spell Power + 15 Crit", GOSSIP_SENDER_MAIN, 139);
+                AddGossipItemFor(player, 1, "120 攻击强度 + 15 暴击等级", GOSSIP_SENDER_MAIN, 136);
+                AddGossipItemFor(player, 1, "70 法术强度 + 每5秒恢复8点法力值", GOSSIP_SENDER_MAIN, 137);
+                AddGossipItemFor(player, 1, "60 闪避等级 + 15 防御等级", GOSSIP_SENDER_MAIN, 138);
+                AddGossipItemFor(player, 1, "70 法术强度 + 15 暴击等级", GOSSIP_SENDER_MAIN, 139);
             }
-            AddGossipItemFor(player, 1, "40 Attack Power + 15 Crit", GOSSIP_SENDER_MAIN, 140);
-            AddGossipItemFor(player, 1, "24 Spell Power + 8 Mp5", GOSSIP_SENDER_MAIN, 141);
-            AddGossipItemFor(player, 1, "30 Stamina + 15 Resilience", GOSSIP_SENDER_MAIN, 142);
-            AddGossipItemFor(player, 1, "20 Dodge + 15 Defense", GOSSIP_SENDER_MAIN, 143);
-            AddGossipItemFor(player, 1, "24 Spell Power + 15 Crit", GOSSIP_SENDER_MAIN, 144);
-            AddGossipItemFor(player, 1, "23 Spell Power + 15 Resilience", GOSSIP_SENDER_MAIN, 145);
-            AddGossipItemFor(player, 1, "40 Attack Power + 15 Resilience", GOSSIP_SENDER_MAIN, 146);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "40 攻击强度 + 15 暴击等级", GOSSIP_SENDER_MAIN, 140);
+            AddGossipItemFor(player, 1, "24 法术强度 + 每5秒恢复8点法力值", GOSSIP_SENDER_MAIN, 141);
+            AddGossipItemFor(player, 1, "30 耐力 + 15 韧性等级", GOSSIP_SENDER_MAIN, 142);
+            AddGossipItemFor(player, 1, "20 闪避等级 + 15 防御等级", GOSSIP_SENDER_MAIN, 143);
+            AddGossipItemFor(player, 1, "24 法术强度 + 15 暴击等级", GOSSIP_SENDER_MAIN, 144);
+            AddGossipItemFor(player, 1, "23 法术强度 + 15 韧性等级", GOSSIP_SENDER_MAIN, 145);
+            AddGossipItemFor(player, 1, "40 攻击强度 + 15 韧性等级", GOSSIP_SENDER_MAIN, 146);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100006, creature->GetGUID());
             return true;
             break;
@@ -425,57 +425,57 @@ public:
         case 6: // Enchant Cloak
             if (player->HasSkill(SKILL_TAILORING) && player->GetSkillValue(SKILL_TAILORING) == 450)
             {
-                AddGossipItemFor(player, 1, "Darkglow Embroidery", GOSSIP_SENDER_MAIN, 149);
-                AddGossipItemFor(player, 1, "Lightweave Embroidery", GOSSIP_SENDER_MAIN, 150);
-                AddGossipItemFor(player, 1, "Swordguard Embroidery", GOSSIP_SENDER_MAIN, 151);
+                AddGossipItemFor(player, 1, "暗光刺绣 (裁缝专属-回魔)", GOSSIP_SENDER_MAIN, 149);
+                AddGossipItemFor(player, 1, "亮纹刺绣 (裁缝专属-法强)", GOSSIP_SENDER_MAIN, 150);
+                AddGossipItemFor(player, 1, "剑卫刺绣 (裁缝专属-攻强)", GOSSIP_SENDER_MAIN, 151);
             }
             if (player->HasSkill(SKILL_ENGINEERING) && player->GetSkillValue(SKILL_ENGINEERING) == 450)
             {
-                AddGossipItemFor(player, 1, "Parachute", GOSSIP_SENDER_MAIN, 147);
+                AddGossipItemFor(player, 1, "弹性衬垫 (工程专属-降落伞)", GOSSIP_SENDER_MAIN, 147);
             }
-            AddGossipItemFor(player, 1, "Shadow Armor", GOSSIP_SENDER_MAIN, 148);
-            AddGossipItemFor(player, 1, "10 Spirit + 2% Reduced Threat", GOSSIP_SENDER_MAIN, 152);
-            AddGossipItemFor(player, 1, "16 Defense", GOSSIP_SENDER_MAIN, 153);
-            AddGossipItemFor(player, 1, "35 Spell Penetration", GOSSIP_SENDER_MAIN, 154);
-            AddGossipItemFor(player, 1, "225 Armor", GOSSIP_SENDER_MAIN, 155);
-            AddGossipItemFor(player, 1, "22 Agility", GOSSIP_SENDER_MAIN, 156);
-            AddGossipItemFor(player, 1, "23 Haste", GOSSIP_SENDER_MAIN, 157);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "高弹力衬垫 (工程专属-敏捷/降落伞)", GOSSIP_SENDER_MAIN, 148);
+            AddGossipItemFor(player, 1, "10 精神 + 2% 威胁值降低", GOSSIP_SENDER_MAIN, 152);
+            AddGossipItemFor(player, 1, "16 防御等级", GOSSIP_SENDER_MAIN, 153);
+            AddGossipItemFor(player, 1, "35 法术穿透", GOSSIP_SENDER_MAIN, 154);
+            AddGossipItemFor(player, 1, "225 护甲值", GOSSIP_SENDER_MAIN, 155);
+            AddGossipItemFor(player, 1, "22 敏捷", GOSSIP_SENDER_MAIN, 156);
+            AddGossipItemFor(player, 1, "23 急速等级", GOSSIP_SENDER_MAIN, 157);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100007, creature->GetGUID());
             return true;
             break;
 
         case 7: //Enchant chest
-            AddGossipItemFor(player, 1, "+10 All Stats", GOSSIP_SENDER_MAIN, 158);
-            AddGossipItemFor(player, 1, "225 Health", GOSSIP_SENDER_MAIN, 159);
-            AddGossipItemFor(player, 1, "10 Mp5", GOSSIP_SENDER_MAIN, 160);
-            AddGossipItemFor(player, 1, "20 Resilience", GOSSIP_SENDER_MAIN, 161);
-            AddGossipItemFor(player, 1, "22 Defense", GOSSIP_SENDER_MAIN, 162);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "+10 所有属性", GOSSIP_SENDER_MAIN, 158);
+            AddGossipItemFor(player, 1, "225 生命值", GOSSIP_SENDER_MAIN, 159);
+            AddGossipItemFor(player, 1, "每5秒恢复10点法力值", GOSSIP_SENDER_MAIN, 160);
+            AddGossipItemFor(player, 1, "20 韧性等级", GOSSIP_SENDER_MAIN, 161);
+            AddGossipItemFor(player, 1, "22 防御等级", GOSSIP_SENDER_MAIN, 162);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100008, creature->GetGUID());
             return true;
             break;
 
         case 8: //Enchant Bracers
-            AddGossipItemFor(player, 1, "40 Stamina", GOSSIP_SENDER_MAIN, 163);
-            AddGossipItemFor(player, 1, "30 Spell Power", GOSSIP_SENDER_MAIN, 164);
-            AddGossipItemFor(player, 1, "50 Attack Power", GOSSIP_SENDER_MAIN, 165);
-            AddGossipItemFor(player, 1, "18 Spirit", GOSSIP_SENDER_MAIN, 166);
-            AddGossipItemFor(player, 1, "15 Expertise", GOSSIP_SENDER_MAIN, 167);
-            AddGossipItemFor(player, 1, "+6 All Stats", GOSSIP_SENDER_MAIN, 168);
-            AddGossipItemFor(player, 1, "16 Intellect", GOSSIP_SENDER_MAIN, 169);
+            AddGossipItemFor(player, 1, "40 耐力", GOSSIP_SENDER_MAIN, 163);
+            AddGossipItemFor(player, 1, "30 法术强度", GOSSIP_SENDER_MAIN, 164);
+            AddGossipItemFor(player, 1, "50 攻击强度", GOSSIP_SENDER_MAIN, 165);
+            AddGossipItemFor(player, 1, "18 精神", GOSSIP_SENDER_MAIN, 166);
+            AddGossipItemFor(player, 1, "15 精准等级", GOSSIP_SENDER_MAIN, 167);
+            AddGossipItemFor(player, 1, "+6 所有属性", GOSSIP_SENDER_MAIN, 168);
+            AddGossipItemFor(player, 1, "16 智力", GOSSIP_SENDER_MAIN, 169);
             if (player->HasSkill(SKILL_LEATHERWORKING) && player->GetSkillValue(SKILL_LEATHERWORKING) == 450)
             {
-                AddGossipItemFor(player, 1, "Fur Lining - Arcane Resist", GOSSIP_SENDER_MAIN, 170);
-                AddGossipItemFor(player, 1, "Fur Lining - Fire Resist", GOSSIP_SENDER_MAIN, 171);
-                AddGossipItemFor(player, 1, "Fur Lining - Frost Resist", GOSSIP_SENDER_MAIN, 172);
-                AddGossipItemFor(player, 1, "Fur Lining - Nature Resist", GOSSIP_SENDER_MAIN, 173);
-                AddGossipItemFor(player, 1, "Fur Lining - Shadow Resist", GOSSIP_SENDER_MAIN, 174);
-                AddGossipItemFor(player, 1, "Fur Lining - Attack Power", GOSSIP_SENDER_MAIN, 175);
-                AddGossipItemFor(player, 1, "Fur Lining - Stamina", GOSSIP_SENDER_MAIN, 176);
-                AddGossipItemFor(player, 1, "Fur Lining - Spellpower", GOSSIP_SENDER_MAIN, 177);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 奥术抗性 (制皮专属)", GOSSIP_SENDER_MAIN, 170);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 火焰抗性 (制皮专属)", GOSSIP_SENDER_MAIN, 171);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 冰霜抗性 (制皮专属)", GOSSIP_SENDER_MAIN, 172);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 自然抗性 (制皮专属)", GOSSIP_SENDER_MAIN, 173);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 阴影抗性 (制皮专属)", GOSSIP_SENDER_MAIN, 174);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 攻击强度 (制皮专属)", GOSSIP_SENDER_MAIN, 175);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 耐力 (制皮专属)", GOSSIP_SENDER_MAIN, 176);
+                AddGossipItemFor(player, 1, "毛皮衬垫 - 法术强度 (制皮专属)", GOSSIP_SENDER_MAIN, 177);
             }
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100009, creature->GetGUID());
             return true;
             break;
@@ -483,56 +483,56 @@ public:
         case 9: //Enchant Gloves
             if (player->HasSkill(SKILL_ENGINEERING) && player->GetSkillValue(SKILL_ENGINEERING) == 400)
             {
-                AddGossipItemFor(player, 1, "Hyperspeed Accelerators", GOSSIP_SENDER_MAIN, 200);
+                AddGossipItemFor(player, 1, "超级加速器 (工程专属-急速)", GOSSIP_SENDER_MAIN, 200);
             }
-            AddGossipItemFor(player, 1, "16 Critical Strike", GOSSIP_SENDER_MAIN, 178);
-            AddGossipItemFor(player, 1, "2% Threat + 10 Parry", GOSSIP_SENDER_MAIN, 179);
-            AddGossipItemFor(player, 1, "44 Attack Power", GOSSIP_SENDER_MAIN, 180);
-            AddGossipItemFor(player, 1, "20 Agility", GOSSIP_SENDER_MAIN, 181);
-            AddGossipItemFor(player, 1, "20 Hit Rating", GOSSIP_SENDER_MAIN, 182);
-            AddGossipItemFor(player, 1, "15 Expertise", GOSSIP_SENDER_MAIN, 183);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "16 暴击等级", GOSSIP_SENDER_MAIN, 178);
+            AddGossipItemFor(player, 1, "2% 威胁值提高 + 10 招架等级", GOSSIP_SENDER_MAIN, 179);
+            AddGossipItemFor(player, 1, "44 攻击强度", GOSSIP_SENDER_MAIN, 180);
+            AddGossipItemFor(player, 1, "20 敏捷", GOSSIP_SENDER_MAIN, 181);
+            AddGossipItemFor(player, 1, "20 命中等级", GOSSIP_SENDER_MAIN, 182);
+            AddGossipItemFor(player, 1, "15 精准等级", GOSSIP_SENDER_MAIN, 183);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100010, creature->GetGUID());
             return true;
             break;
 
         case 10: //Enchant legs
-            AddGossipItemFor(player, 1, "40 Resilience + 28 Stamina", GOSSIP_SENDER_MAIN, 184);
-            AddGossipItemFor(player, 1, "55 Stamina + 22 Agility", GOSSIP_SENDER_MAIN, 185);
-            AddGossipItemFor(player, 1, "75 Attack Power + 22 Critical", GOSSIP_SENDER_MAIN, 186);
-            AddGossipItemFor(player, 1, "50 Spell Power + 22 Spirit", GOSSIP_SENDER_MAIN, 187);
-            AddGossipItemFor(player, 1, "50 Spell Power + 30 Stamina", GOSSIP_SENDER_MAIN, 188);
-            AddGossipItemFor(player, 1, "72 Stamina + 35 Agility", GOSSIP_SENDER_MAIN, 189);
-            AddGossipItemFor(player, 1, "100 Attack Power + 36 Critical", GOSSIP_SENDER_MAIN, 190);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, 1, "40 韧性等级 + 28 耐力", GOSSIP_SENDER_MAIN, 184);
+            AddGossipItemFor(player, 1, "55 耐力 + 22 敏捷", GOSSIP_SENDER_MAIN, 185);
+            AddGossipItemFor(player, 1, "75 攻击强度 + 22 暴击等级", GOSSIP_SENDER_MAIN, 186);
+            AddGossipItemFor(player, 1, "50 法术强度 + 22 精神", GOSSIP_SENDER_MAIN, 187);
+            AddGossipItemFor(player, 1, "50 法术强度 + 30 耐力", GOSSIP_SENDER_MAIN, 188);
+            AddGossipItemFor(player, 1, "72 耐力 + 35 敏捷 (制皮专属)", GOSSIP_SENDER_MAIN, 189);
+            AddGossipItemFor(player, 1, "100 攻击强度 + 36 暴击等级 (制皮专属)", GOSSIP_SENDER_MAIN, 190);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100011, creature->GetGUID());
             return true;
             break;
 
         case 11: //Enchant Boots
-            AddGossipItemFor(player, 1, "32 Attack Power", GOSSIP_SENDER_MAIN, 191);
-            AddGossipItemFor(player, 1, "15 Stamina + Minor Speed Increase", GOSSIP_SENDER_MAIN, 192);
-            AddGossipItemFor(player, 1, "16 Agility", GOSSIP_SENDER_MAIN, 193);
-            AddGossipItemFor(player, 1, "18 Spirit", GOSSIP_SENDER_MAIN, 194);
-            AddGossipItemFor(player, 1, "Restore 7 Health + Mp5", GOSSIP_SENDER_MAIN, 195);
-            AddGossipItemFor(player, 1, "12 Hit Rating + 12 Critical", GOSSIP_SENDER_MAIN, 196);
-            AddGossipItemFor(player, 1, "22 Stamina", GOSSIP_SENDER_MAIN, 197);
+            AddGossipItemFor(player, 1, "32 攻击强度", GOSSIP_SENDER_MAIN, 191);
+            AddGossipItemFor(player, 1, "15 耐力 + 略微提高移动速度", GOSSIP_SENDER_MAIN, 192);
+            AddGossipItemFor(player, 1, "16 敏捷", GOSSIP_SENDER_MAIN, 193);
+            AddGossipItemFor(player, 1, "18 精神", GOSSIP_SENDER_MAIN, 194);
+            AddGossipItemFor(player, 1, "每5秒恢复7点生命值与法力值", GOSSIP_SENDER_MAIN, 195);
+            AddGossipItemFor(player, 1, "12 命中等级 + 12 暴击等级", GOSSIP_SENDER_MAIN, 196);
+            AddGossipItemFor(player, 1, "22 耐力", GOSSIP_SENDER_MAIN, 197);
             if (player->HasSkill(SKILL_ENGINEERING) && player->GetSkillValue(SKILL_ENGINEERING) == 450)
             {
-                AddGossipItemFor(player, 1, "Nitro Boots", GOSSIP_SENDER_MAIN, 198);
-                AddGossipItemFor(player, 1, "Hand-Mounted Pyro Rocket", GOSSIP_SENDER_MAIN, 199);
-                AddGossipItemFor(player, 1, "Reticulated Armor Webbing", GOSSIP_SENDER_MAIN, 201);
+                AddGossipItemFor(player, 1, "硝化甘油推进器 (工程专属-火箭靴)", GOSSIP_SENDER_MAIN, 198);
+                AddGossipItemFor(player, 1, "手雷发射器 (工程专属-手套火箭炮)", GOSSIP_SENDER_MAIN, 199);
+                AddGossipItemFor(player, 1, "网状护甲片 (工程专属-手套护甲)", GOSSIP_SENDER_MAIN, 201);
             }
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100012, creature->GetGUID());
             return true;
             break;
 
         case 12: //Enchant rings
-            AddGossipItemFor(player, 1, "40 Attack Power", GOSSIP_SENDER_MAIN, 202);
+            AddGossipItemFor(player, 1, "40 攻击强度", GOSSIP_SENDER_MAIN, 202);
             AddGossipItemFor(player, 1, "23 Spell Power", GOSSIP_SENDER_MAIN, 203);
             AddGossipItemFor(player, 1, "30 Stamina", GOSSIP_SENDER_MAIN, 204);
-            AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+            AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             player->PlayerTalkClass->SendGossipMenu(100013, creature->GetGUID());
             return true;
             break;
@@ -549,23 +549,23 @@ public:
             {
                 if (player->HasSkill(SKILL_ENCHANTING) && player->GetSkillValue(SKILL_ENCHANTING) == 450)
                 {
-                    AddGossipItemFor(player, 1, "Blade Ward", GOSSIP_SENDER_MAIN, 207);
-                    AddGossipItemFor(player, 1, "Blood Draining", GOSSIP_SENDER_MAIN, 208);
+                    AddGossipItemFor(player, 1, "刃卫", GOSSIP_SENDER_MAIN, 207);
+                    AddGossipItemFor(player, 1, "血涌", GOSSIP_SENDER_MAIN, 208);
                 }
-                AddGossipItemFor(player, 1, "26 Agility", GOSSIP_SENDER_MAIN, 205);
-                AddGossipItemFor(player, 1, "45 Spirit", GOSSIP_SENDER_MAIN, 206);
-                AddGossipItemFor(player, 1, "Berserking", GOSSIP_SENDER_MAIN, 209);
-                AddGossipItemFor(player, 1, "25 Hit Rating + 25 Critical", GOSSIP_SENDER_MAIN, 210);
-                AddGossipItemFor(player, 1, "Black Magic", GOSSIP_SENDER_MAIN, 211);
-                AddGossipItemFor(player, 1, "Battlemaster", GOSSIP_SENDER_MAIN, 212);
-                AddGossipItemFor(player, 1, "Icebreaker", GOSSIP_SENDER_MAIN, 213);
-                AddGossipItemFor(player, 1, "Lifeward", GOSSIP_SENDER_MAIN, 214);
-                AddGossipItemFor(player, 1, "50 Stamina", GOSSIP_SENDER_MAIN, 215);
-                AddGossipItemFor(player, 1, "65 Attack Power", GOSSIP_SENDER_MAIN, 216);
-                AddGossipItemFor(player, 1, "63 Spell Power", GOSSIP_SENDER_MAIN, 217);
-                AddGossipItemFor(player, 1, "Mongoose", GOSSIP_SENDER_MAIN, 218);
-                AddGossipItemFor(player, 1, "Executioner", GOSSIP_SENDER_MAIN, 219);
-                AddGossipItemFor(player, GOSSIP_ICON_TALK, "Back", GOSSIP_SENDER_MAIN, 300);
+                AddGossipItemFor(player, 1, "26 敏捷", GOSSIP_SENDER_MAIN, 205);
+                AddGossipItemFor(player, 1, "45 精神", GOSSIP_SENDER_MAIN, 206);
+                AddGossipItemFor(player, 1, "狂暴", GOSSIP_SENDER_MAIN, 209);
+                AddGossipItemFor(player, 1, "25 命中等级 + 25 暴击", GOSSIP_SENDER_MAIN, 210);
+                AddGossipItemFor(player, 1, "黑魔法", GOSSIP_SENDER_MAIN, 211);
+                AddGossipItemFor(player, 1, "战斗大师", GOSSIP_SENDER_MAIN, 212);
+                AddGossipItemFor(player, 1, "破冰", GOSSIP_SENDER_MAIN, 213);
+                AddGossipItemFor(player, 1, "生命守护", GOSSIP_SENDER_MAIN, 214);
+                AddGossipItemFor(player, 1, "50 耐力", GOSSIP_SENDER_MAIN, 215);
+                AddGossipItemFor(player, 1, "65 攻击强度", GOSSIP_SENDER_MAIN, 216);
+                AddGossipItemFor(player, 1, "63 法术强度", GOSSIP_SENDER_MAIN, 217);
+                AddGossipItemFor(player, 1, "猫鼬", GOSSIP_SENDER_MAIN, 218);
+                AddGossipItemFor(player, 1, "斩杀", GOSSIP_SENDER_MAIN, 219);
+                AddGossipItemFor(player, GOSSIP_ICON_TALK, "返回", GOSSIP_SENDER_MAIN, 300);
             }
             else
             {
@@ -1062,24 +1062,24 @@ public:
         
         case 300:
         {
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[Enchant Main Weapon]", GOSSIP_SENDER_MAIN, 1);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[附魔主手武器]", GOSSIP_SENDER_MAIN, 1);
             if (player->HasSpell(674))
             {
-                AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[Enchant Offhand Weapon]", GOSSIP_SENDER_MAIN, 13);
+                AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_mace_116:24:24:-18|t[附魔副手武器]", GOSSIP_SENDER_MAIN, 13);
             }
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_axe_113:24:24:-18|t[Enchant 2H Weapon]", GOSSIP_SENDER_MAIN, 2);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_shield_71:24:24:-18|t[Enchant Shield]", GOSSIP_SENDER_MAIN, 3);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_helmet_29:24:24:-18|t[Enchant Head]", GOSSIP_SENDER_MAIN, 4);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_shoulder_23:24:24:-18|t[Enchant Shoulders]", GOSSIP_SENDER_MAIN, 5);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_misc_cape_18:24:24:-18|t[Enchant Cloak]", GOSSIP_SENDER_MAIN, 6);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_chest_cloth_04:24:24:-18|t[Enchant Chest]", GOSSIP_SENDER_MAIN, 7);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_bracer_14:24:24:-18|t[Enchant Bracers]", GOSSIP_SENDER_MAIN, 8);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_gauntlets_06:24:24:-18|t[Enchant Gloves]", GOSSIP_SENDER_MAIN, 9);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_pants_11:24:24:-18|t[Enchant Legs]", GOSSIP_SENDER_MAIN, 10);
-            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_boots_05:24:24:-18|t[Enchant Boots]", GOSSIP_SENDER_MAIN, 11);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_axe_113:24:24:-18|t[附魔双手武器]", GOSSIP_SENDER_MAIN, 2);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_shield_71:24:24:-18|t[附魔盾牌]", GOSSIP_SENDER_MAIN, 3);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_helmet_29:24:24:-18|t[附魔头部]", GOSSIP_SENDER_MAIN, 4);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_shoulder_23:24:24:-18|t[附魔肩部]", GOSSIP_SENDER_MAIN, 5);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_misc_cape_18:24:24:-18|t[附魔披风]", GOSSIP_SENDER_MAIN, 6);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_chest_cloth_04:24:24:-18|t[附魔胸甲]", GOSSIP_SENDER_MAIN, 7);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_bracer_14:24:24:-18|t[附魔护腕]", GOSSIP_SENDER_MAIN, 8);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_gauntlets_06:24:24:-18|t[附魔手套]", GOSSIP_SENDER_MAIN, 9);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_pants_11:24:24:-18|t[附魔腿部]", GOSSIP_SENDER_MAIN, 10);
+            AddGossipItemFor(player, 1, "|TInterface/ICONS/inv_boots_05:24:24:-18|t[附魔靴子]", GOSSIP_SENDER_MAIN, 11);
 
             if (player->HasSkill(SKILL_ENCHANTING) && player->GetSkillValue(SKILL_ENCHANTING) == 450)
-                AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_jewelry_ring_85:24:24:-18|t[Enchant Rings]", GOSSIP_SENDER_MAIN, 12);
+                AddGossipItemFor(player, 1, "|TInterface/ICONS/Inv_jewelry_ring_85:24:24:-18|t[附魔戒指]", GOSSIP_SENDER_MAIN, 12);
 
             player->PlayerTalkClass->SendGossipMenu(601015, creature->GetGUID());
             return true;
