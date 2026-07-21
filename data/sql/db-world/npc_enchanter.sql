@@ -37,7 +37,7 @@ DELETE FROM `npc_text` WHERE `ID`=@Entry;
 INSERT INTO `npc_text` (`ID`, `text0_0`) VALUES (@Entry, 'Good day $N. Beauregard Boneglitter at your service. I offer a vast array of gear enchantments for the aspiring adventurer.');
 
 -- 名称汉化
-DELETE FROM `creature_template_locale` WHERE `ID` = @Entry AND `locale` = 'zhCN';
+DELETE FROM `creature_template_locale` WHERE `entry` = @Entry AND `locale` = 'zhCN';
 INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) VALUES (@Entry, 'zhCN', '骨闪', '附魔大师', 0);
 
 -- 对话汉化
