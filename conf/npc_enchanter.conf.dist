@@ -37,9 +37,12 @@ Enchanter.NumPhrases = 3
 #  NPC Phrases - Add your own!
 #  Spoken randomly to the world
 # -------------------------------------------------------------------------------------
-EC.P1 = "I can infuse your weapons with magical energy."
-EC.P2 = "My enchantments are known across all of Azeroth!"
-EC.P3 = "Greetings traveller. Care to see my wares?"
+# EC.P1 = "I can infuse your weapons with magical energy."
+# EC.P2 = "My enchantments are known across all of Azeroth!"
+# EC.P3 = "Greetings traveller. Care to see my wares?"
+EC.P1 = "我可以为你的武器注入魔法能量。"
+EC.P2 = "我的附魔在整个艾泽拉斯都赫赫有名！"
+EC.P3 = "你好，旅行者。要来看看我的商品吗？"
 
 # -------------------------------------------------------------------------------------
 #  The spell cast to get the player's attention
